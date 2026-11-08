@@ -19,7 +19,7 @@ python -m unittest discover -s tests -v
 python examples/render_demo.py --check
 ```
 
-No API key, data download, third-party runtime dependency or paid service is needed. `pip install .` installs the importable package. The four CLI commands emit complete JSON; invalid input exits 2 with empty stdout.
+No API key, data download, third-party runtime dependency or paid service is needed. `pip install .` installs the importable package. The seven CLI commands emit complete JSON; invalid input exits 2 with empty stdout.
 
 ```python
 from betlab import paired, replay, audit_tree, coin_tree
@@ -65,12 +65,33 @@ Full reproducible summary: [examples/demo.json](examples/demo.json). Full fair-n
 
 ## Verification
 
-34 tests include independent exhaustive product references for all 243 length-five ternary sequences; a separate 64-path crossing/expectation reference; exact fair and negative-drift trees; predictable-prefix checks; all 256 observations and 16 mixture components; zero wealth; equality at threshold; running p-bound monotonicity; a marginal-zero but conditionally invalid law; variable-depth/zero-difference controls; internal rational differences larger than input component caps; alias/cycle/scope/input guards; and all four CLI outputs and error paths.
+51 tests retain the original 34, adding 14 start-allocation behavior tests and three more SVG tests. The foundation includes independent exhaustive product references for all 243 length-five ternary sequences; a separate 64-path crossing/expectation reference; exact fair and negative-drift trees; predictable-prefix checks; all 256 observations and 16 mixture components; zero wealth; equality at threshold; running p-bound monotonicity; a marginal-zero but conditionally invalid law; variable-depth/zero-difference controls; internal rational differences larger than input component caps; alias/cycle/scope/input guards; and all four CLI outputs and error paths.
 
-SVG tests check all 63 plotted coordinates, all nine null-table values, full compressed report metadata, hidden-witness tampering and byte-exact regeneration. CI runs Python 3.10-3.13, reproduces demo JSON/SVG and checks the installed wheel's four full CLI JSON outputs outside the checkout.
+SVG tests check all 63 plotted coordinates, all nine null-table values, full compressed report metadata, hidden-witness tampering and byte-exact regeneration. CI runs Python 3.10-3.13, reproduces demo JSON/SVG and checks the installed wheel's seven full CLI JSON outputs outside the checkout.
 
 ## Attribution and limits
 
 The mathematics is established. The implementation and tests here are from scratch, not a claim of inventing betting or anytime-valid inference. The core reference is [Waudby-Smith and Ramdas, Estimating means of bounded random variables by betting](https://academic.oup.com/jrsssb/article/86/1/1/7043257), especially the capital-process and predictable-betting arguments. Supporting references: [mean/variance e-processes and discrete mixtures](https://arxiv.org/html/2301.12480v7), [formal bounded-mean betting theorem documentation](https://robby955.github.io/FormalSLT/FormalSLT/AnytimeValid/BettingCS.html), [Ville inequality context](https://arxiv.org/html/2304.01163), [Ji Won Park's tutorial](https://jiwoncpark.github.io/posts/2025/02/estimation-as-betting/) and [Oxford reading-group notes](https://shirleyliuxq.github.io/Ramdas_Wang_ebook_chapter7-2.pdf). Referencing formal theorem documentation does not formally verify this Python code.
 
 The tree audit proves arithmetic for a supplied bounded finite law only. No unbounded-score method, confidence-sequence inversion, learned optimal bet, automatic stream selection, multiple-test correction, persistent online service or actual model deployment is included. Exact rational arithmetic has bounded input domains and can grow expensive; no throughput claim is made.
+
+## Prespecified start-allocation extension
+
+Version 0.2 adds a valid alternative to free refills: allocate one initial unit across deterministic start times before observing the stream. Each start retains every fixed-bet capital; unstarted components stay at one internally and contribute their reserved weight. Ruined components stay zero. The complete statistic is a fixed convex mixture, not the largest start-specific result.
+
+![Budgeted start mixture](assets/start-allocation.svg)
+
+```bash
+python -m betlab starts-demo
+python -m betlab starts examples/starts-input.json
+python -m betlab starts-tree examples/starts-tree-input.json
+python examples/render_starts.py --check
+```
+
+The delayed-signal control has eight negative, eight positive and eight negative differences. Bet one with starts 1, 9, 17 and equal weights first crosses threshold four at round 12, has wealth 257/3 including reserve 1/3 at round 16, and ends at zero. The one-start control is permanently ruined at round one. This is a developed fixture, not a general power ranking or change-time estimate.
+
+The fair eight-round null audit uses starts 1, 3, 5, 9, each weight 1/4, with the round-nine budget still reserved at every leaf. Exact crossing probability is 5/32 at alpha 1/4, with final and stopped expectations both one; the invalid free-refill control remains 201/256. The six-round negative-drift law gives 17/729, expected final wealth 1261/2916 and expected stopped wealth 683/1458. Every node expectation and leaf contribution is exported, not only these totals.
+
+`start_mixture(differences, starts, ...)` and `audit_starts(tree, starts, ...)` require a fixed schedule of at most 16 starts in 1..256; optional positive start weights sum exactly to one. Future starts remain part of the allocation. Canonical ordering preserves each start/weight pair. The original four CLI fixture outputs remain byte-identical, both figures regenerate exactly, and the six-module wheel matches all seven full CLI JSON outputs outside checkout. The 51-test suite includes direct suffix-product references, all 256 fair paths, every conditional expectation and full 256-observation/16-start/16-bet capacity.
+
+[Start-mixture proof, contract and attribution](STARTS.md) and [full developed report](examples/starts-demo.json). This is one prespecified conditional-mean-null test, not an uncorrected union with the original tests. No adaptive/post-hoc starts, infinite restart service, ARL detector, model-selection correction or new theorem is claimed.
