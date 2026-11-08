@@ -1,7 +1,7 @@
 import json
 import sys
 from pathlib import Path
-from . import replay, paired, audit_tree, demo, start_mixture, audit_starts, starts_demo
+from . import replay, paired, audit_tree, demo, start_mixture, audit_starts, starts_demo, mean_evidence, confidence_sequence, confidence_demo
 
 
 def pairs(items):
@@ -18,9 +18,11 @@ def main():
         args = sys.argv[1:]
         if args == ['demo']:
             result = demo()
+        elif args == ['confidence-demo']:
+            result = confidence_demo()
         elif args == ['starts-demo']:
             result = starts_demo()
-        elif len(args) == 2 and args[0] in ('replay', 'paired', 'tree', 'starts', 'starts-tree'):
+        elif len(args) == 2 and args[0] in ('replay', 'paired', 'tree', 'starts', 'starts-tree', 'mean', 'confidence'):
             raw = Path(args[1]).read_bytes()
             if len(raw) > 200000:
                 raise ValueError('input exceeds 200000 bytes')
@@ -28,14 +30,22 @@ def main():
                            parse_constant=lambda _: (_ for _ in ()).throw(ValueError('nonfinite JSON')))
             if not isinstance(x, dict) or type(x.get('schema_version')) is not int or x['schema_version'] != 1:
                 raise ValueError('schema_version must be integer one')
-            required = {'replay': {'differences'}, 'paired': {'baseline', 'candidate'}, 'tree': {'tree'}, 'starts': {'differences', 'starts'}, 'starts-tree': {'tree', 'starts'}}[args[0]]
+            required = {'replay': {'differences'}, 'paired': {'baseline', 'candidate'}, 'tree': {'tree'}, 'starts': {'differences', 'starts'}, 'starts-tree': {'tree', 'starts'}, 'mean': {'differences', 'mean'}, 'confidence': {'differences'}}[args[0]]
             allowed = required | {'schema_version', 'bets', 'weights', 'alpha'}
+            if args[0] == 'confidence':
+                allowed |= {'iterations'}
             if args[0] in ('starts','starts-tree'):
                 allowed |= {'start_weights'}
             if not required <= set(x) or not set(x) <= allowed:
                 raise ValueError('input schema mismatch')
             kw = {k: x[k] for k in ('bets', 'weights', 'alpha') if k in x}
-            if args[0] in ('starts','starts-tree'):
+            if args[0] == 'mean':
+                result = mean_evidence(x['differences'], x['mean'], **kw)
+            elif args[0] == 'confidence':
+                if 'iterations' in x:
+                    kw['iterations'] = x['iterations']
+                result = confidence_sequence(x['differences'], **kw)
+            elif args[0] in ('starts','starts-tree'):
                 if 'start_weights' in x:
                     kw['start_weights'] = x['start_weights']
                 result = (start_mixture(x['differences'], x['starts'], **kw) if args[0]=='starts'
@@ -47,7 +57,7 @@ def main():
             else:
                 result = audit_tree(x['tree'], **kw)
         else:
-            raise ValueError('usage: python -m betlab demo | starts-demo | replay FILE | paired FILE | tree FILE | starts FILE | starts-tree FILE')
+            raise ValueError('usage: python -m betlab demo | starts-demo | replay FILE | paired FILE | tree FILE | starts FILE | starts-tree FILE | confidence-demo | mean FILE | confidence FILE')
         print(json.dumps(result, indent=2, sort_keys=True))
         return 0
     except (ValueError, OSError, RecursionError) as exc:
