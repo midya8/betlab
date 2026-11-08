@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1080" viewBox="0 0 1120 1080">
+<rect width="1120" height="1080" fill="#f4f1ed"/><rect x="16" y="16" width="1088" height="1048" rx="18" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#292929}.muted{fill:#666}</style>
+<text x="42" y="58" font-size="26" font-weight="700">BetLab / planned starts share one unit, not unlimited refills</text>
+<text x="42" y="87" font-size="17" class="muted">A fixed finite mixture keeps future capital reserved and ruined components at zero.</text>
+<text x="42" y="130" font-size="21" font-weight="700">1 Late evidence after an early loss</text>
+<text x="42" y="158" font-size="16" class="muted">Eight -1 differences, eight +1, then eight -1. Bet one; starts 1, 9, 17 each receive 1/3.</text>
+<line x1="95" y1="425.000" x2="1007" y2="425.000" stroke="#e5e5e5"/>
+<text x="55" y="430.0" font-size="14" >0</text>
+<line x1="95" y1="394.000" x2="1007" y2="394.000" stroke="#e5e5e5"/>
+<text x="55" y="399.0" font-size="14" >1</text>
+<line x1="95" y1="353.020" x2="1007" y2="353.020" stroke="#e5e5e5"/>
+<text x="55" y="358.0202290584918" font-size="14" >4</text>
+<line x1="95" y1="298.289" x2="1007" y2="298.289" stroke="#e5e5e5"/>
+<text x="55" y="303.2886519212395" font-size="14" >16</text>
+<line x1="95" y1="238.307" x2="1007" y2="238.307" stroke="#e5e5e5"/>
+<text x="55" y="243.30659779611793" font-size="14" >64</text>
+<line x1="95" y1="353.020" x2="1007" y2="353.020" stroke="#333" stroke-dasharray="6 5"/>
+<text x="870" y="345.0202290584918" font-size="14" >threshold 4</text>
+<line x1="437" y1="205" x2="437" y2="425" stroke="#bbb" stroke-dasharray="3 4"/>
+<text x="409" y="194" font-size="14" >start 9</text>
+<line x1="741" y1="205" x2="741" y2="425" stroke="#bbb" stroke-dasharray="3 4"/>
+<text x="713" y="194" font-size="14" >start 17</text>
+<polyline id="curve-scheduled" data-values="[&quot;1&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;2/3&quot;, &quot;1&quot;, &quot;5/3&quot;, &quot;3&quot;, &quot;17/3&quot;, &quot;11&quot;, &quot;65/3&quot;, &quot;43&quot;, &quot;257/3&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;]" points="95.000,394.000 133.000,402.154 171.000,402.154 209.000,402.154 247.000,402.154 285.000,402.154 323.000,402.154 361.000,402.154 399.000,402.154 437.000,394.000 475.000,381.134 513.000,363.000 551.000,340.154 589.000,313.866 627.000,285.422 665.000,255.758 703.000,225.440 741.000,425.000 779.000,425.000 817.000,425.000 855.000,425.000 893.000,425.000 931.000,425.000 969.000,425.000 1007.000,425.000" fill="none" stroke="#127e71" stroke-width="3"/>
+<polyline id="curve-from_start" data-values="[&quot;1&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;, &quot;0&quot;]" points="95.000,394.000 133.000,425.000 171.000,425.000 209.000,425.000 247.000,425.000 285.000,425.000 323.000,425.000 361.000,425.000 399.000,425.000 437.000,425.000 475.000,425.000 513.000,425.000 551.000,425.000 589.000,425.000 627.000,425.000 665.000,425.000 703.000,425.000 741.000,425.000 779.000,425.000 817.000,425.000 855.000,425.000 893.000,425.000 931.000,425.000 969.000,425.000 1007.000,425.000" fill="none" stroke="#485fa8" stroke-width="3"/>
+<text x="90" y="452" font-size="14" >0</text>
+<text x="242" y="452" font-size="14" >4</text>
+<text x="394" y="452" font-size="14" >8</text>
+<text x="546" y="452" font-size="14" >12</text>
+<text x="698" y="452" font-size="14" >16</text>
+<text x="850" y="452" font-size="14" >20</text>
+<text x="1002" y="452" font-size="14" >24</text>
+<text x="980" y="480" font-size="14" >time</text>
+<line x1="60" y1="500" x2="88" y2="500" stroke="#127e71" stroke-width="3"/>
+<text x="98" y="506" font-size="17" >allocated start mixture</text>
+<line x1="465" y1="500" x2="493" y2="500" stroke="#485fa8" stroke-width="3"/>
+<text x="503" y="506" font-size="17" >one process from round 1</text>
+<text x="52" y="552" font-size="16" >First crossing</text>
+<text x="52" y="580" font-size="18" id="cell-delayed-cross" data-value="12">12</text>
+<text x="385" y="552" font-size="16" >Final wealth</text>
+<text x="385" y="580" font-size="18" id="cell-delayed-final" data-value="0">0</text>
+<text x="710" y="552" font-size="16" >Unstarted budget at round 16</text>
+<text x="710" y="580" font-size="18" id="cell-delayed-reserve" data-value="1/3">1/3</text>
+<text x="42" y="628" font-size="21" font-weight="700">2 Exhaustive null-law audit, alpha = 1/4</text>
+<text x="42" y="656" font-size="16" class="muted">Starts 1, 3, 5, 9 each receive 1/4; the round-9 budget stays reserved in both trees.</text>
+<text x="52" y="700" font-size="16" font-weight="700">Null tree</text>
+<text x="415" y="700" font-size="16" font-weight="700">P(ever &gt;= 4)</text>
+<text x="645" y="700" font-size="16" font-weight="700">E(final wealth)</text>
+<text x="855" y="700" font-size="16" font-weight="700">E(stopped wealth)</text>
+<text x="52" y="743" font-size="17" >Fair signs, 8 rounds</text>
+<text x="415" y="743" font-size="18" id="cell-fair_null-crossing_probability" data-value="5/32">5/32</text>
+<text x="645" y="743" font-size="18" id="cell-fair_null-expected_final_wealth" data-value="1">1</text>
+<text x="855" y="743" font-size="18" id="cell-fair_null-expected_stopped_wealth" data-value="1">1</text>
+<text x="52" y="791" font-size="17" >P(+1)=1/3, 6 rounds</text>
+<text x="415" y="791" font-size="18" id="cell-negative_drift_null-crossing_probability" data-value="17/729">17/729</text>
+<text x="645" y="791" font-size="18" id="cell-negative_drift_null-expected_final_wealth" data-value="1261/2916">1261/2916</text>
+<text x="855" y="791" font-size="18" id="cell-negative_drift_null-expected_stopped_wealth" data-value="683/1458">683/1458</text>
+<text x="42" y="850" font-size="17" >The invalid free-refill control still crosses with probability 201/256 in the fair tree.</text>
+<text x="42" y="882" font-size="17" >The planned mixture crosses with probability 5/32 &lt;= 1/4; no unbudgeted capital is added.</text>
+<text x="42" y="930" font-size="17" >For start s: K(s,t)=1 before s, then multiply 1+b*D from s onward.</text>
+<text x="42" y="960" font-size="17" >Fixed nonnegative start/bet weights sum to one, including the unstarted reserve.</text>
+<text x="42" y="1000" font-size="15" class="muted">One prespecified conditional-mean-null test. Not a change-time estimate or a general power ranking.</text>
+<text x="42" y="1028" font-size="15" class="muted">No adaptive/post-hoc starts, infinite-horizon restart service, ARL detector or model-selection correction.</text>
+<metadata id="report-zlib-base64">eJztWltvqzgQ/iuI51SJzSVJd/dxf0VVWQ6YxjpgOMakrbr972tDkqZkSDlRcYnESy/GMPPNZ3sunjc3Zil9ZTEp+ZOgqXv/5tK02FL33kVz3525G6ZK9/7BRe7jTE+OeMlzUU8Tr4pnjBRkk1ci1i94cxws9SuRzMuS6RElKzZzE64/TJ4ZTdVWz1q4ZkiWitTzuHhy7xGeubISQv9DMvqiZ+kvzT33feZywRU/fR/p90WValXdfx9iniRMMhExopz/nIKW6tH5+x/HCMk3JZM7qrS+GgH2Z24ZbVlGyY7JBgQyQ3nB9KdywZzEyGJOIVlZaKAJZ7FjXomrlDlUxI5ipfrLEbkTU0XvYlYwETOhnFJRqUonl04iGXMkS3iallqF+oFWnT9t91bUoGYnPx/3c8xDNFvP0FKPqK3WYJunxqaGAiVppHV8eHOjPCu0pqKerymIFN+xg501U0crPWgz6y9FuVCSbypVw61Nn+aRtmbGX1Ql2X6sVqE2R6NqTb6x/oeIhKblmQwEyGiwtaWgDylrK1LQsi3GLN/jatGDd8fZevVvqviJqeOHzcKu7VGJsxm4nnFcjngPYaLGJjV4omas1HgTNWOlxp+oGSs1wUTNWKkJJ2rGSs1yomas1KxugxpIBAZEYNBmeHzMgMTgE2LWIDHoMzFohLT4gAgfNJh/g7SgRR9eglFumBUgYgXabHWLzMB1gBYzY+QFhZDJQthm4S1SA9cB2ofZcpS7xoP8jAc7Gu8WPQ2CSwFtdsboa0LI2YSwtwlv0t3AtYAWN+E4/Q3CkMfRo7Dh8E16Hbgi0CLIHyM9OID8jh6FY+jgJj0PXBVo0XO4xRobQ1eIuMTMd6G4Nu38YAUuCCxOOVlMfNjjA64CTHz8FB9w8j/x8UN8YDjpn/j4KT7gVH/i46f4gPP7iY+f4gPO6Cc+fooPOItv8/F4kHPo5Hs3rXw7luZFpikiyUG7fcMe5ZI0LXZvLheKSdPAJ/KYmT66IDBNeTua8piYdjciWdPmVlZZRuWreenQ2UcKmW/ohqdcvZp0aIHmTbrHXgoWGZ1bzYHrOT59Wqq8KPTvj3wXe/Mmn3/massF2Tcr1rmhRpUympAor4QymuocTSvH5K7+xNHQpl4j81yzx5VgZVlrXElt9IN1M2pGm1ZD9qJIoxA95Jd6uKA17aZ/L6XRr73RoYzQNDF+bZpg7uELdkEXrYLO7GGIfNeCE5lnpKGnXpt53w7PsuG+oXnP8FH9P+vtXJz3dobGKMc9AfWSGkhHWfvMv4cws2rb4moGCslirincpNcLRP0Fvs/axiO81FtIESoIM9xH9cJrrDhMO+vnPlYlGc3mTQerXt1VVtRfcrROjv5CM8ssF4c6Jftd1SdQ717U5vg7P7vOVlDN2ufT0KA0h0frX1L+rqg0R04zfEpgswU/RsjmeO6djib6wM4lMF3/veN5ddjj++TozG99E6o7BMNCVmDhwWBhGBa2AssbDJYHw/KswPIHg+XDsHwrsILBYAUwrMAKrHAwWCEMK7QCazkYrCUMa2kF1qoPLBgVvohqBaNaWUG1vh6Vfw1XazvOeHE9rNU1OwtZCjJ6RRkwrrpF449PQmQnzEC94gwYmHd5e3V4LmQn0EC9Ig0YWHh5h3VEGshOqIF6xRodSxFf3mQdoSGyE22gXuFGx0kfXN5lXbG8nYADDRZxdKReyE7EgYYLOboIsxNzoF5Bx3emX8hO2IF6xR3fmYAhO5EH7hV5fGcKhu2EHni4AkdH6IEtVTiGK3F0BIvYTuiBhytydAT32E7ogX3wTkKwJ2puWEgseaI6ryBC7/obiBWaL7E5SDpvIBar9ozzersX+vtJX19DhP5AtxBo3kTAZzcR+wfXX0ag5RdGQjhEc7xG4UUzhStvjvzg/LbmcDtR18NJkT8zSSQVv+qKelMSP6ttv/8PKkWPpA==</metadata></svg>
