@@ -14,10 +14,14 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python -m betlab demo > /tmp/demo.json && cmp /tmp/demo.json examples/demo.json
       - run: python examples/render_demo.py --check
+      - run: python examples/render_starts.py --check
+      - run: python -m betlab starts-demo > /tmp/starts-demo.json && cmp /tmp/starts-demo.json examples/starts-demo.json
       - run: |
           python -m betlab replay examples/replay-input.json > /tmp/replay.json
           python -m betlab paired examples/paired-input.json > /tmp/paired.json
           python -m betlab tree examples/tree-input.json > /tmp/tree.json
+          python -m betlab starts examples/starts-input.json > /tmp/starts.json
+          python -m betlab starts-tree examples/starts-tree-input.json > /tmp/starts-tree.json
   package:
     runs-on: ubuntu-latest
     steps:
@@ -28,10 +32,10 @@ jobs:
       - run: python -m pip wheel . --no-deps -w /tmp/wheels
       - run: python -m pip install --target /tmp/installed /tmp/wheels/*.whl
       - run: |
-          for mode in demo replay paired tree; do
-            if [ "$mode" = demo ]; then
-              python -m betlab demo > /tmp/source-$mode.json
-              (cd /tmp && PYTHONPATH=/tmp/installed python -m betlab demo) > /tmp/wheel-$mode.json
+          for mode in demo starts-demo replay paired tree starts starts-tree; do
+            if [ "$mode" = demo ] || [ "$mode" = starts-demo ]; then
+              python -m betlab "$mode" > /tmp/source-$mode.json
+              (cd /tmp && PYTHONPATH=/tmp/installed python -m betlab "$mode") > /tmp/wheel-$mode.json
             else
               python -m betlab "$mode" "examples/$mode-input.json" > /tmp/source-$mode.json
               (cd /tmp && PYTHONPATH=/tmp/installed python -m betlab "$mode" "$GITHUB_WORKSPACE/examples/$mode-input.json") > /tmp/wheel-$mode.json
