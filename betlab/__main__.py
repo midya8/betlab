@@ -1,7 +1,7 @@
 import json
 import sys
 from pathlib import Path
-from . import replay, paired, audit_tree, demo
+from . import replay, paired, audit_tree, demo, start_mixture, audit_starts, starts_demo
 
 
 def pairs(items):
@@ -18,7 +18,9 @@ def main():
         args = sys.argv[1:]
         if args == ['demo']:
             result = demo()
-        elif len(args) == 2 and args[0] in ('replay', 'paired', 'tree'):
+        elif args == ['starts-demo']:
+            result = starts_demo()
+        elif len(args) == 2 and args[0] in ('replay', 'paired', 'tree', 'starts', 'starts-tree'):
             raw = Path(args[1]).read_bytes()
             if len(raw) > 200000:
                 raise ValueError('input exceeds 200000 bytes')
@@ -26,19 +28,26 @@ def main():
                            parse_constant=lambda _: (_ for _ in ()).throw(ValueError('nonfinite JSON')))
             if not isinstance(x, dict) or type(x.get('schema_version')) is not int or x['schema_version'] != 1:
                 raise ValueError('schema_version must be integer one')
-            required = {'replay': {'differences'}, 'paired': {'baseline', 'candidate'}, 'tree': {'tree'}}[args[0]]
+            required = {'replay': {'differences'}, 'paired': {'baseline', 'candidate'}, 'tree': {'tree'}, 'starts': {'differences', 'starts'}, 'starts-tree': {'tree', 'starts'}}[args[0]]
             allowed = required | {'schema_version', 'bets', 'weights', 'alpha'}
+            if args[0] in ('starts','starts-tree'):
+                allowed |= {'start_weights'}
             if not required <= set(x) or not set(x) <= allowed:
                 raise ValueError('input schema mismatch')
             kw = {k: x[k] for k in ('bets', 'weights', 'alpha') if k in x}
-            if args[0] == 'replay':
+            if args[0] in ('starts','starts-tree'):
+                if 'start_weights' in x:
+                    kw['start_weights'] = x['start_weights']
+                result = (start_mixture(x['differences'], x['starts'], **kw) if args[0]=='starts'
+                          else audit_starts(x['tree'], x['starts'], **kw))
+            elif args[0] == 'replay':
                 result = replay(x['differences'], **kw)
             elif args[0] == 'paired':
                 result = paired(x['baseline'], x['candidate'], **kw)
             else:
                 result = audit_tree(x['tree'], **kw)
         else:
-            raise ValueError('usage: python -m betlab demo | replay FILE | paired FILE | tree FILE')
+            raise ValueError('usage: python -m betlab demo | starts-demo | replay FILE | paired FILE | tree FILE | starts FILE | starts-tree FILE')
         print(json.dumps(result, indent=2, sort_keys=True))
         return 0
     except (ValueError, OSError, RecursionError) as exc:
