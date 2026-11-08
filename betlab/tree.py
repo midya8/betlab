@@ -68,7 +68,7 @@ def audit_tree(tree, *, bets=None, weights=None, alpha='1/20'):
     assert sum(l['mass'] for l in leaves) == 1
     summaries = {}
     for k in current_keys:
-        cross = sum(l['mass'] for l in leaves if l['first_crossing'][k] is not None)
+        cross = sum((l['mass'] for l in leaves if l['first_crossing'][k] is not None), Fraction(0))
         final = sum(l['mass']*l['wealth'][k] for l in leaves)
         stop = sum(l['mass']*l['stopped_wealth'][k] for l in leaves)
         summaries[k] = {'crossing_probability': cross, 'expected_final_wealth': final,
