@@ -1,0 +1,3320 @@
+{
+  "schema_version": 1,
+  "tree": {
+    "outcomes": [
+      {
+        "probability": "1/2",
+        "difference": 1,
+        "next": {
+          "outcomes": [
+            {
+              "probability": "1/2",
+              "difference": 1,
+              "next": {
+                "outcomes": [
+                  {
+                    "probability": "1/2",
+                    "difference": 1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "probability": "1/2",
+                    "difference": -1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "probability": "1/2",
+              "difference": -1,
+              "next": {
+                "outcomes": [
+                  {
+                    "probability": "1/2",
+                    "difference": 1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "probability": "1/2",
+                    "difference": -1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "probability": "1/2",
+        "difference": -1,
+        "next": {
+          "outcomes": [
+            {
+              "probability": "1/2",
+              "difference": 1,
+              "next": {
+                "outcomes": [
+                  {
+                    "probability": "1/2",
+                    "difference": 1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "probability": "1/2",
+                    "difference": -1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "probability": "1/2",
+              "difference": -1,
+              "next": {
+                "outcomes": [
+                  {
+                    "probability": "1/2",
+                    "difference": 1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "probability": "1/2",
+                    "difference": -1,
+                    "next": {
+                      "outcomes": [
+                        {
+                          "probability": "1/2",
+                          "difference": 1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "probability": "1/2",
+                          "difference": -1,
+                          "next": {
+                            "outcomes": [
+                              {
+                                "probability": "1/2",
+                                "difference": 1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "probability": "1/2",
+                                "difference": -1,
+                                "next": {
+                                  "outcomes": [
+                                    {
+                                      "probability": "1/2",
+                                      "difference": 1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "probability": "1/2",
+                                      "difference": -1,
+                                      "next": {
+                                        "outcomes": [
+                                          {
+                                            "probability": "1/2",
+                                            "difference": 1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "probability": "1/2",
+                                            "difference": -1,
+                                            "next": {
+                                              "outcomes": [
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": 1,
+                                                  "next": null
+                                                },
+                                                {
+                                                  "probability": "1/2",
+                                                  "difference": -1,
+                                                  "next": null
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "alpha": "1/4"
+}
