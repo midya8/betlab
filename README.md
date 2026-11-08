@@ -19,7 +19,7 @@ python -m unittest discover -s tests -v
 python examples/render_demo.py --check
 ```
 
-No API key, data download, third-party runtime dependency or paid service is needed. `pip install .` installs the importable package. The seven CLI commands emit complete JSON; invalid input exits 2 with empty stdout.
+No API key, data download, third-party runtime dependency or paid service is needed. `pip install .` installs the importable package. The ten CLI commands emit complete JSON; invalid input exits 2 with empty stdout.
 
 ```python
 from betlab import paired, replay, audit_tree, coin_tree
@@ -65,9 +65,9 @@ Full reproducible summary: [examples/demo.json](examples/demo.json). Full fair-n
 
 ## Verification
 
-51 tests retain the original 34, adding 14 start-allocation behavior tests and three more SVG tests. The foundation includes independent exhaustive product references for all 243 length-five ternary sequences; a separate 64-path crossing/expectation reference; exact fair and negative-drift trees; predictable-prefix checks; all 256 observations and 16 mixture components; zero wealth; equality at threshold; running p-bound monotonicity; a marginal-zero but conditionally invalid law; variable-depth/zero-difference controls; internal rational differences larger than input component caps; alias/cycle/scope/input guards; and all four CLI outputs and error paths.
+67 tests retain the original 34, adding 14 start-allocation behavior tests, 13 confidence-inversion behavior tests and six more SVG tests. The foundation includes independent exhaustive product references for all 243 length-five ternary sequences; a separate 64-path crossing/expectation reference; exact fair and negative-drift trees; predictable-prefix checks; all 256 observations and 16 mixture components; zero wealth; equality at threshold; running p-bound monotonicity; a marginal-zero but conditionally invalid law; variable-depth/zero-difference controls; internal rational differences larger than input component caps; alias/cycle/scope/input guards; and all four CLI outputs and error paths.
 
-SVG tests check all 63 plotted coordinates, all nine null-table values, full compressed report metadata, hidden-witness tampering and byte-exact regeneration. CI runs Python 3.10-3.13, reproduces demo JSON/SVG and checks the installed wheel's seven full CLI JSON outputs outside the checkout.
+SVG tests check all 63 plotted coordinates, all nine null-table values, full compressed report metadata, hidden-witness tampering and byte-exact regeneration. CI runs Python 3.10-3.13, reproduces demo JSON/SVG and checks the installed wheel's ten full CLI JSON outputs outside the checkout.
 
 ## Attribution and limits
 
@@ -95,3 +95,24 @@ The fair eight-round null audit uses starts 1, 3, 5, 9, each weight 1/4, with th
 `start_mixture(differences, starts, ...)` and `audit_starts(tree, starts, ...)` require a fixed schedule of at most 16 starts in 1..256; optional positive start weights sum exactly to one. Future starts remain part of the allocation. Canonical ordering preserves each start/weight pair. The original four CLI fixture outputs remain byte-identical, both figures regenerate exactly, and the six-module wheel matches all seven full CLI JSON outputs outside checkout. The 51-test suite includes direct suffix-product references, all 256 fair paths, every conditional expectation and full 256-observation/16-start/16-bet capacity.
 
 [Start-mixture proof, contract and attribution](STARTS.md) and [full developed report](examples/starts-demo.json). This is one prespecified conditional-mean-null test, not an uncorrected union with the original tests. No adaptive/post-hoc starts, infinite restart service, ARL detector, model-selection correction or new theorem is claimed.
+
+## Confidence-sequence inversion extension
+
+Version 0.3 adds a deliberately conservative bounded-mean bet family and certified rational inversion. For each candidate m in [-1,1], factors are `1+b*(D-m)/2`, with fixed normalized mixtures. Monotone wealth makes the accepted mean set an interval. Exact rational bisection retains component-level crossing/noncrossing witnesses and every midpoint comparison, without claiming that generally algebraic roots are rational. Running intersections retain earlier exclusions after reversal.
+
+![Certified confidence inversion](assets/confidence-inversion.svg)
+
+```bash
+python -m betlab confidence-demo
+python -m betlab mean examples/mean-input.json
+python -m betlab confidence examples/confidence-input.json
+python examples/render_confidence.py --check
+```
+
+With bet one and alpha 1/4, 24 repeated differences of 1/2 give boundary bracket [12487/32768,1561/4096] and conservative closed interval [12487/32768,1]. Eight +1 then twelve -1 retain the earlier interval [1273/2048,1] even while current-prefix inversion weakens. Sixteen bisections bound running-boundary uncertainty by 1/32768. An eight-round sign law with positive probability 3/4 and constant conditional mean 1/2 enumerates all 256 paths: ever-exclusion and true-mean crossing probabilities are both 2187/16384, below alpha 1/4. Every conditional mixture slack is zero and final/stopped expectations are one. Display sequences are developed controls, not real-model data or validation of a common mean.
+
+`mean_evidence(differences, mean, ...)` exports the fixed candidate's factors/components and equality-inclusive first crossing. `confidence_sequence(differences, iterations=16, ...)` exports current/running root brackets and conservative closed outer intervals, with a fixed target mu required to upper-bound every conditional mean. This is not a drifting-mean, causal-effect or two-sided estimate. The new factor uses effective bet b/2, separate from the original bet family. Candidate-mean inversion does not require a union bound over means; model/stream/scoring-rule selection is still uncorrected.
+
+The new modes allow up to 64 observations, 16 fixed bets and 1..32 bisections; older limits remain unchanged. All seven older CLI fixture outputs remain byte-identical. The seven-module wheel matches all ten complete CLI outputs outside checkout. The 67-test suite includes exhaustive independent products/brackets/trials on 81 ternary streams, exact endpoint/midpoint ties, refinement, reversal, prefix-only behavior, all 256 coverage paths and full capacity. All three figures regenerate exactly; the new figure checks 92 coordinates, seven cells, full metadata and hidden-leaf tampering.
+
+[Proof, boundary conventions, exact API/schema and attribution](CONFIDENCE.md) and [full developed report](examples/confidence-demo.json). No new theorem, optimized/variance-adaptive bet, model-selection correction, unknown-law validation or production service is claimed.
