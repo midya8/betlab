@@ -1,12 +1,23 @@
 # BetLab
 
-Exact sequential evidence for bounded paired model scores, with an exhaustive audit of what goes wrong when ruined tests get free restarts.
+Compare a fixed pair of models on an ordered stream of bounded scores. Inspect
+how a statistical bet accumulates evidence, why giving a ruined test free
+restarts breaks its guarantee, and what a prespecified start budget changes.
 
 ![Exact evidence and restart audit](assets/evidence-audit.svg)
 
-BetLab is a dependency-free Python 3.10+ implementation of standard nonnegative betting processes. It reports every rational wealth update, mixture component, past-only bet, first threshold crossing and running-maximum p-value bound. A separate finite-law auditor enumerates all branches and checks conditional expectations, stopped wealth and the exact probability of ever crossing.
+BetLab implements standard nonnegative betting processes in Python 3.10+, using only the standard library. It reports every rational wealth update, mixture component, past-only bet, first threshold crossing and running-maximum p-value bound. A separate finite-law auditor enumerates all branches and checks conditional expectations, stopped wealth and the exact probability of ever crossing.
 
-This is an offline statistical-mechanics project for AI evaluation. It does not train a model or claim a new inference theorem. The paired-score examples and null trees are developed fixtures, not untouched benchmarks or deployed monitoring evidence.
+This is an offline statistics project for AI evaluation. It does not train a model or claim a new inference theorem. The paired-score examples and null trees are developed fixtures, not untouched benchmarks or deployed monitoring evidence.
+
+## Choose the calculation
+
+- `replay`, `paired` and `tree`: the original conditional-mean-zero tests and a supplied-law audit.
+- `starts` and `starts-tree`: allocate one initial unit across fixed start times.
+- `mean` and `confidence`: test a fixed upper-mean candidate or return a conservative one-sided confidence sequence.
+
+These are separate test families, not an automatically corrected union. Choose
+the stream, scoring rule and reported test before inspecting the tested data.
 
 ## Run
 
@@ -30,7 +41,7 @@ law = audit_tree(coin_tree(8), alpha="1/4")
 print(law["summary"]["invalid_restart"]["crossing_probability"])  # 201/256
 ```
 
-## The statistical contract
+## Assumptions behind the test
 
 Let `D_t = candidate_score_t - baseline_score_t`, with both scores in `[0,1]`. The single one-sided null is **`E[D_t | past] <= 0` at every round**, with `D_t` in `[-1,1]`. Higher scores must be better. Data order, scoring rule, compared models, stream, mixture and test must be selected before inspecting the tested data. Predictability is relative to the available past; no current or future observation may enter a bet.
 
@@ -45,7 +56,7 @@ For each valid process, `anytime_p_bound = min(1, 1/running_max_wealth)`. It is 
 
 **The guarantee is conditional on the assumptions, not certified from an observed sequence.** Marginal mean zero alone is insufficient. Correlation is allowed only when the conditional-null condition remains true with the relevant information. Repeatedly reusing a benchmark, choosing a model on the same stream, inspecting both valid tests and selecting the winner, searching over streams, resetting capital after failure or changing hypotheses require additional design or multiplicity accounting not supplied here. No arbitrary-dependence, drift, model-selection or production guarantee is claimed.
 
-## Exact developed controls
+## What the supplied examples show
 
 At alpha `1/4`, the full fair-coin null tree has eight rounds, 255 internal histories and 256 equiprobable leaves. Each node has conditional mean zero.
 
@@ -63,19 +74,19 @@ A reversal sequence has eight `+1` differences followed by twelve `-1`. Both val
 
 Full reproducible summary: [examples/demo.json](examples/demo.json). Full fair-null node/leaf audit: run `tree examples/tree-input.json`. [Proof, schema and boundaries](DESIGN.md).
 
-## Verification
+## Tests and reproduction
 
 67 tests retain the original 34, adding 14 start-allocation behavior tests, 13 confidence-inversion behavior tests and six more SVG tests. The foundation includes independent exhaustive product references for all 243 length-five ternary sequences; a separate 64-path crossing/expectation reference; exact fair and negative-drift trees; predictable-prefix checks; all 256 observations and 16 mixture components; zero wealth; equality at threshold; running p-bound monotonicity; a marginal-zero but conditionally invalid law; variable-depth/zero-difference controls; internal rational differences larger than input component caps; alias/cycle/scope/input guards; and all four CLI outputs and error paths.
 
 SVG tests check all 63 plotted coordinates, all nine null-table values, full compressed report metadata, hidden-witness tampering and byte-exact regeneration. CI runs Python 3.10-3.13, reproduces demo JSON/SVG and checks the installed wheel's ten full CLI JSON outputs outside the checkout.
 
-## Attribution and limits
+## Sources and limits
 
 The mathematics is established. The implementation and tests here are from scratch, not a claim of inventing betting or anytime-valid inference. The core reference is [Waudby-Smith and Ramdas, Estimating means of bounded random variables by betting](https://academic.oup.com/jrsssb/article/86/1/1/7043257), especially the capital-process and predictable-betting arguments. Supporting references: [mean/variance e-processes and discrete mixtures](https://arxiv.org/html/2301.12480v7), [formal bounded-mean betting theorem documentation](https://robby955.github.io/FormalSLT/FormalSLT/AnytimeValid/BettingCS.html), [Ville inequality context](https://arxiv.org/html/2304.01163), [Ji Won Park's tutorial](https://jiwoncpark.github.io/posts/2025/02/estimation-as-betting/) and [Oxford reading-group notes](https://shirleyliuxq.github.io/Ramdas_Wang_ebook_chapter7-2.pdf). Referencing formal theorem documentation does not formally verify this Python code.
 
-The tree audit proves arithmetic for a supplied bounded finite law only. No unbounded-score method, confidence-sequence inversion, learned optimal bet, automatic stream selection, multiple-test correction, persistent online service or actual model deployment is included. Exact rational arithmetic has bounded input domains and can grow expensive; no throughput claim is made.
+The tree audit checks arithmetic for a supplied bounded finite law only. The original zero-null modes do not invert tests into a confidence sequence; the separate mean-inversion modes below do. No unbounded-score method, learned optimal bet, automatic stream selection, multiple-test correction, persistent online service or actual model deployment is included. Exact rational arithmetic has bounded input domains and can grow expensive; no throughput claim is made.
 
-## Prespecified start-allocation extension
+## Allocate capital across fixed start times
 
 Version 0.2 adds a valid alternative to free refills: allocate one initial unit across deterministic start times before observing the stream. Each start retains every fixed-bet capital; unstarted components stay at one internally and contribute their reserved weight. Ruined components stay zero. The complete statistic is a fixed convex mixture, not the largest start-specific result.
 
@@ -92,11 +103,11 @@ The delayed-signal control has eight negative, eight positive and eight negative
 
 The fair eight-round null audit uses starts 1, 3, 5, 9, each weight 1/4, with the round-nine budget still reserved at every leaf. Exact crossing probability is 5/32 at alpha 1/4, with final and stopped expectations both one; the invalid free-refill control remains 201/256. The six-round negative-drift law gives 17/729, expected final wealth 1261/2916 and expected stopped wealth 683/1458. Every node expectation and leaf contribution is exported, not only these totals.
 
-`start_mixture(differences, starts, ...)` and `audit_starts(tree, starts, ...)` require a fixed schedule of at most 16 starts in 1..256; optional positive start weights sum exactly to one. Future starts remain part of the allocation. Canonical ordering preserves each start/weight pair. The original four CLI fixture outputs remain byte-identical, both figures regenerate exactly, and the six-module wheel matches all seven full CLI JSON outputs outside checkout. The 51-test suite includes direct suffix-product references, all 256 fair paths, every conditional expectation and full 256-observation/16-start/16-bet capacity.
+`start_mixture(differences, starts, ...)` and `audit_starts(tree, starts, ...)` require a fixed schedule of at most 16 starts in 1..256; optional positive start weights sum exactly to one. Future starts remain part of the allocation. Canonical ordering preserves each start/weight pair. The original four CLI fixture outputs remain byte-identical, both figures regenerate exactly, and its six-module wheel matched all seven CLI JSON outputs outside checkout. The current release retains these checks. That release had 51 tests, including direct suffix-product references, all 256 fair paths, every conditional expectation and full 256-observation/16-start/16-bet capacity.
 
 [Start-mixture proof, contract and attribution](STARTS.md) and [full developed report](examples/starts-demo.json). This is one prespecified conditional-mean-null test, not an uncorrected union with the original tests. No adaptive/post-hoc starts, infinite restart service, ARL detector, model-selection correction or new theorem is claimed.
 
-## Confidence-sequence inversion extension
+## Invert the tests into a confidence sequence
 
 Version 0.3 adds a deliberately conservative bounded-mean bet family and certified rational inversion. For each candidate m in [-1,1], factors are `1+b*(D-m)/2`, with fixed normalized mixtures. Monotone wealth makes the accepted mean set an interval. Exact rational bisection retains component-level crossing/noncrossing witnesses and every midpoint comparison, without claiming that generally algebraic roots are rational. Running intersections retain earlier exclusions after reversal.
 
@@ -113,6 +124,6 @@ With bet one and alpha 1/4, 24 repeated differences of 1/2 give boundary bracket
 
 `mean_evidence(differences, mean, ...)` exports the fixed candidate's factors/components and equality-inclusive first crossing. `confidence_sequence(differences, iterations=16, ...)` exports current/running root brackets and conservative closed outer intervals, with a fixed target mu required to upper-bound every conditional mean. This is not a drifting-mean, causal-effect or two-sided estimate. The new factor uses effective bet b/2, separate from the original bet family. Candidate-mean inversion does not require a union bound over means; model/stream/scoring-rule selection is still uncorrected.
 
-The new modes allow up to 64 observations, 16 fixed bets and 1..32 bisections; older limits remain unchanged. All seven older CLI fixture outputs remain byte-identical. The seven-module wheel matches all ten complete CLI outputs outside checkout. The 67-test suite includes exhaustive independent products/brackets/trials on 81 ternary streams, exact endpoint/midpoint ties, refinement, reversal, prefix-only behavior, all 256 coverage paths and full capacity. All three figures regenerate exactly; the new figure checks 92 coordinates, seven cells, full metadata and hidden-leaf tampering.
+The new modes allow up to 64 observations, 16 fixed bets and 1..32 bisections; older limits remain unchanged. All seven older CLI fixture outputs remain byte-identical. The seven-module wheel matches all ten complete CLI outputs outside checkout. The current 67-test suite includes exhaustive independent products/brackets/trials on 81 ternary streams, exact endpoint/midpoint ties, refinement, reversal, prefix-only behavior, all 256 coverage paths and full capacity. All three figures regenerate exactly; the new figure checks 92 coordinates, seven cells, full metadata and hidden-leaf tampering.
 
 [Proof, boundary conventions, exact API/schema and attribution](CONFIDENCE.md) and [full developed report](examples/confidence-demo.json). No new theorem, optimized/variance-adaptive bet, model-selection correction, unknown-law validation or production service is claimed.
