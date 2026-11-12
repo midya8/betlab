@@ -1,10 +1,15 @@
-# Design and statistical proof
+# BetLab: the original zero-null tests
+
+These notes cover the original replay, paired-score and finite-law audit modes.
+[STARTS.md](STARTS.md) covers fixed start allocations;
+[CONFIDENCE.md](CONFIDENCE.md) covers the separate upper-mean test family and
+one-sided confidence inversion. Their assumptions and limits remain distinct.
 
 ## One fixed one-sided null
 
 The user supplies differences `D_t` in `[-1,1]`, or ordered baseline/candidate scores in `[0,1]` whose differences are computed exactly. The intended null is `E[D_t | F_(t-1)] <= 0` at every round. The information set must include the available past used to choose observations and bets. Independence is not required by the algebra, but marginal mean zero does not imply this conditional property. The code cannot establish it from one observed sequence.
 
-All testing choices must precede the tested stream: score definition/direction, model pair, stream, fixed-mixture bets/weights and reported process. Inspecting two reported tests does not make their union a level-alpha test. This repository returns them separately and makes no combined rejection. It does not implement multiplicity correction or a confidence sequence.
+All testing choices must precede the tested stream: score definition/direction, model pair, stream, fixed-mixture bets/weights and reported process. Inspecting two reported tests does not make their union a level-alpha test. The original modes return them separately and make no combined rejection. They do not implement multiplicity correction or confidence inversion; the separate version 0.3 modes are defined in CONFIDENCE.md.
 
 ## Nonnegative betting and mixtures
 
@@ -60,4 +65,4 @@ The runtime is standard-library-only Python 3.10+. This is deliberately bounded 
 
 ## Verification and attribution
 
-The 34-test suite combines independent products, path enumeration, conditional-law witnesses, schema/CLI guards, full installed-wheel parity and SVG checks. The demo is a developed control, with no random seeds or measured real-model performance. The standard mathematical sources are linked in README. The Python implementation is not formally verified; formal theorem documentation is a supporting reference only. No new statistical result is claimed.
+The original 34-test suite, retained within the current 67 tests, combines independent products, path enumeration, conditional-law witnesses, schema/CLI guards, full installed-wheel parity and SVG checks. The demo is a developed control, with no random seeds or measured real-model performance. The standard mathematical sources are linked in README. The Python implementation is not formally verified; formal theorem documentation is a supporting reference only. No new statistical result is claimed.
